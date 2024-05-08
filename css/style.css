@@ -23,7 +23,9 @@ input::placeholder {
     color: rgba(111, 89, 110, 50%) !important;
 
 }
-
+button:hover {
+    transform: scaleX(1.05);
+}
 label {
     /* font-family: 'Inter';
     font-style: normal; */
@@ -245,6 +247,12 @@ footer {
     overflow: hidden;
     cursor: pointer;
 }
+.products-mayknow {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
 .layer
 {
     background-color: rgba(255,255,255,.7);
@@ -257,13 +265,33 @@ footer {
     cursor: pointer;
 
 }
-.category-product:hover,.categories:hover .layer
+.category-product:hover .layer
 {
     top: 0%;
 }   
-.category-product, .categories img {
+.categories:hover .layer
+{
+    top: 0%;
+} 
+.products-mayknow:hover .layer
+{
+    top: 0%;
+} 
+.category-product img {
+    transition: transform 1s;
+}
+.categories img {
+    transition: transform 1s;
+}
+.products-mayknow img {
     transition: transform 1s;
 }
 .category-product:hover  img {
+    transform: scale(1.25);
+}
+.categories:hover  img {
+    transform: scale(1.25);
+}
+.products-mayknow:hover  img {
     transform: scale(1.25);
 }
