@@ -171,6 +171,13 @@ footer {
     cursor: pointer;
     width: 100px;
     height: 100px;
+    overflow: hidden;
+}
+.product-img img {
+    transition: transform 1s;
+}
+.product-img:hover img{
+    transform: scale(1.15);
 }
 .checked {
     color: orange;
@@ -205,4 +212,58 @@ footer {
 }
 .products-carousel, .feedback, .products-btns{
     background-color: rgb(217, 217, 217);
+}
+.btn-checkout {
+    width: 225px;
+}
+.cart-sections {
+    background-color: var(--second-color);
+}
+.btn-wishlist {
+    width: 180px;
+}
+.product-main-img {
+    height: 550px;
+    overflow: hidden;
+}
+.product-main-img img {
+    transition: transform 1s;
+}
+.product-main-img:hover img{
+    transform: scale(1.15);
+}
+.category-product
+{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.categories {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.layer
+{
+    background-color: rgba(255,255,255,.7);
+    color: #000;
+    font-weight: 800;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: top 1s;
+    cursor: pointer;
+
+}
+.category-product:hover,.categories:hover .layer
+{
+    top: 0%;
+}   
+.category-product, .categories img {
+    transition: transform 1s;
+}
+.category-product:hover  img {
+    transform: scale(1.25);
 }
