@@ -12,7 +12,7 @@ body {
 .navbar {
     background-color: var(--second-color);
 }
-input {
+input, select{
     background-color: rgb(231, 202, 230) !important;
     /* border: 1px solid #000000 !important; */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -92,13 +92,18 @@ a:hover {
 .foot {
     height: 1px;
 }
-
 .btn-search {
     top: 0;
     bottom: 0;
     right:  calc(50%);
     background-color: rgb(185, 176, 176);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    border: var(--bs-border-width) solid black;
+}
+.btn-search-chat {
+    top: 0;
+    bottom: 0;
+    right:  calc(1.2%);
+    background-color: rgb(185, 176, 176);
     border: var(--bs-border-width) solid black;
 }
 .search-bar {
@@ -111,10 +116,10 @@ a:hover {
 .nav-second {
     background-color: var(--main-color);
 }
-.btn-sell {
-    padding:  35px 45px;
+/* .btn-sell {
     background-color: rgba(217, 217, 217, 50%);
-}
+} */
+.btn-w
 .btn-sell:hover {
    
     background-color: rgba(217, 217, 217, 90%);
@@ -218,7 +223,7 @@ footer {
 .btn-checkout {
     width: 225px;
 }
-.cart-sections {
+.sections {
     background-color: var(--second-color);
 }
 .btn-wishlist {
@@ -294,4 +299,28 @@ footer {
 }
 .products-mayknow:hover  img {
     transform: scale(1.25);
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+}
+.user-info h3{
+    color: var(--main-color);
+}
+.user-info input{
+    color: rgb(65, 63, 63);
+}
+.statistics{
+    height: 500px;
+    background-color: rgb(161, 154, 154);
+}
+.section-msg {
+    background-color: rgb(217, 217, 217);
+}
+#checkout sup {
+    color: red;
+}
+.chat-img {
+    width: 100px;
+    height: 100px;
 }
