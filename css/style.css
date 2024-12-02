@@ -301,8 +301,8 @@ footer {
     transform: scale(1.25);
 }
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 .user-info h3{
     color: var(--main-color);
